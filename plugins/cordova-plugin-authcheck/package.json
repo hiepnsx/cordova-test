@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-authcheck",
+  "version": "1.1.1",
+  "description": "Cordova Device Plugin",
+  "cordova": {
+    "id": "cordova-plugin-authcheck",
+    "platforms": [
+      "android",
+      "browser",
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-authcheck"
+  },
+  "keywords": [
+    "cordova",
+    "authcheck"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}

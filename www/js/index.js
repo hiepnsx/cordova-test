@@ -27,15 +27,9 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        // var checkButton = document.getElementById("check");
-        // checkButton.addEventListener('click', function(){
-        //      var test = authcheck.excute('hiepns@gmail.com', 'admin@123').isSuccess;
-        //     document.getElementById("result").innerHTML = "Result: " + test;
-        // }, false);
         var checkButton = document.getElementById("check");
         checkButton.addEventListener('click', function(){
-             var test = authcheck.excute('hiepns@gmail.com', 'admin@123');
-            document.getElementById("result").innerHTML = "Result: " + test.isSuccess;
+            authcheck.excute(document.getElementById("email").value, document.getElementById("password").value);
         }, false);
     },
     // deviceready Event Handler
@@ -48,8 +42,6 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         console.log('Received Event: ' + id);
-        var test = authcheck.excute('hiepns@gmail.com', 'admin@123');
-        document.getElementById("result").innerHTML = "Result: " + test.isSuccess;
     }
 };
 

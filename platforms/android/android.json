@@ -17,10 +17,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"AuthCheck\"><param name=\"android-package\" value=\"jp.verve.AuthCheck\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"AuthCheck\"><param name=\"android-package\" value=\"jp.verve.authcheck.AuthCheck\" /></feature>",
                             "count": 1
                         }

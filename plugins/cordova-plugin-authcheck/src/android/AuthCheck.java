@@ -61,16 +61,18 @@ public class AuthCheck extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("excuteAuthCheck".equals(action)) {
             boolean isSuccess;
-            String error = "no";
+            String msg = "";
 
-            if (args.getString(0).equals("hiepns@gmail.com")) {
+            if (args.getString(0).equals("verve@gmail.com") && args.getString(1).equals("123456")) {
                 isSuccess = true;
+                msg = "Login success!";
             } else {
                 isSuccess = false;
+                msg = "Wrong email or password!";
             }
             JSONObject r = new JSONObject();
             r.put("isSuccess", isSuccess);
-            r.put("error", error);
+            r.put("msg", msg);
             callbackContext.success(r);
         }
         else {

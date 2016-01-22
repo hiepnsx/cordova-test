@@ -7,9 +7,11 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         var checkButton = document.getElementById("check");
         checkButton.addEventListener('click', function() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            authcheck.excute(onAuthSuccess, onAuthFail, [email, password]);
+            window.location="takepicture.html";
+            // console.log("test");
+            // var email = document.getElementById("email").value;
+            // var password = document.getElementById("password").value;
+            // authcheck.excute(onAuthSuccess, onAuthFail, [email, password]);
         }, false);
     },
     onDeviceReady: function() {
@@ -23,7 +25,8 @@ var app = {
 function onAuthSuccess(result) {
         console.log("success");
         document.getElementById("result").innerHTML = result.msg;
-        //TODO: redirect to take picture
+        // if (result.isSuccess == true) {window.location="takepicture.html";};
+        window.location="takepicture.html"
 };
 function onAuthFail(result) {
         console.log("fail");

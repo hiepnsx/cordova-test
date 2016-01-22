@@ -17,11 +17,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"AuthCheck\"><param name=\"android-package\" value=\"jp.verve.authcheck.AuthCheck\" /></feature>",
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "xml": "<feature name=\"AuthCheck\"><param name=\"android-package\" value=\"jp.verve.authcheck.AuthCheck\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -46,13 +46,13 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         },
         "cordova-plugin-authcheck": {
-            "PACKAGE_NAME": "jp.verve.thanksgift"
-        },
-        "cordova-plugin-camera": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         }
     },
@@ -70,14 +70,6 @@
             "pluginId": "cordova-plugin-device",
             "clobbers": [
                 "device"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
-            "id": "cordova-plugin-authcheck.authcheck",
-            "pluginId": "cordova-plugin-authcheck",
-            "clobbers": [
-                "authcheck"
             ]
         },
         {
@@ -111,12 +103,21 @@
             "clobbers": [
                 "CameraPopoverHandle"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
+            "id": "cordova-plugin-authcheck.authcheck",
+            "pluginId": "cordova-plugin-authcheck",
+            "clobbers": [
+                "authcheck"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.1",
         "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-camera": "2.1.0",
         "cordova-plugin-console": "1.0.2",
-        "cordova-plugin-camera": "2.1.0"
+        "cordova-plugin-authcheck": "1.1.1"
     }
 }

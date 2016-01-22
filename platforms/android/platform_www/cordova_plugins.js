@@ -15,14 +15,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
-        "id": "cordova-plugin-authcheck.authcheck",
-        "pluginId": "cordova-plugin-authcheck",
-        "clobbers": [
-            "authcheck"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "id": "cordova-plugin-camera.Camera",
         "pluginId": "cordova-plugin-camera",
@@ -53,6 +45,14 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
+        "id": "cordova-plugin-authcheck.authcheck",
+        "pluginId": "cordova-plugin-authcheck",
+        "clobbers": [
+            "authcheck"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -60,8 +60,9 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-device": "1.1.1",
+    "cordova-plugin-camera": "2.1.0",
     "cordova-plugin-console": "1.0.2",
-    "cordova-plugin-camera": "2.1.0"
+    "cordova-plugin-authcheck": "1.1.1"
 }
 // BOTTOM OF METADATA
 });

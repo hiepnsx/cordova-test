@@ -9,10 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
                         },
@@ -22,6 +18,14 @@
                         },
                         {
                             "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthCheck\"><param name=\"ios-package\" value=\"AuthCheck\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -40,12 +44,6 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-authcheck": {
-            "PACKAGE_NAME": "jp.verve.thanksgift"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "jp.verve.thanksgift"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         },
@@ -54,34 +52,16 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
+        "cordova-plugin-authcheck": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
         }
     },
     "dependent_plugins": {},
     "modules": [
-        {
-            "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
-            "id": "cordova-plugin-authcheck.authcheck",
-            "pluginId": "cordova-plugin-authcheck",
-            "clobbers": [
-                "authcheck"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-            "id": "cordova-plugin-console.console",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "console"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-console/www/logger.js",
-            "id": "cordova-plugin-console.logger",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "cordova.logger"
-            ]
-        },
         {
             "file": "plugins/cordova-plugin-device/www/device.js",
             "id": "cordova-plugin-device.device",
@@ -121,13 +101,37 @@
             "clobbers": [
                 "CameraPopoverHandle"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+            "id": "cordova-plugin-console.console",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "console"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/logger.js",
+            "id": "cordova-plugin-console.logger",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "cordova.logger"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
+            "id": "cordova-plugin-authcheck.authcheck",
+            "pluginId": "cordova-plugin-authcheck",
+            "clobbers": [
+                "authcheck"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-authcheck": "1.1.1",
-        "cordova-plugin-console": "1.0.2",
         "cordova-plugin-device": "1.1.1",
         "cordova-plugin-whitelist": "1.2.1",
-        "cordova-plugin-camera": "2.1.0"
+        "cordova-plugin-camera": "2.1.0",
+        "cordova-plugin-console": "1.0.2",
+        "cordova-plugin-authcheck": "1.1.1"
     }
 }

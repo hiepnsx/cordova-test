@@ -23,8 +23,9 @@ var app = {
 function onAuthSuccess(result) {
         console.log("success");
         document.getElementById("result").innerHTML = result.msg;
-        // if (result.isSuccess == true) {window.location="takepicture.html";};
-        window.location="takepicture.html"
+        if (result.isSuccess == true) {
+            window.location="takepicture.html";
+        };
 };
 function onAuthFail(result) {
         console.log("fail");

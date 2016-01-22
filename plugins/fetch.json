@@ -15,6 +15,14 @@
         "is_top_level": true,
         "variables": {}
     },
+    "cordova-plugin-camera": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "cordova-plugin-console": {
         "source": {
             "type": "registry",
@@ -23,10 +31,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-camera": {
+    "cordova-plugin-authcheck": {
         "source": {
-            "type": "registry",
-            "id": "cordova-plugin-camera"
+            "type": "local",
+            "path": "/Users/VietNezo/Desktop/cordova-plugin-authcheck"
         },
         "is_top_level": true,
         "variables": {}

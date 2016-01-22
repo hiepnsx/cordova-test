@@ -43,6 +43,20 @@ module.exports = [
         "id": "cordova-plugin-camera.CameraProxy",
         "pluginId": "cordova-plugin-camera",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-authcheck/www/authcheck.js",
+        "id": "cordova-plugin-authcheck.authcheck",
+        "pluginId": "cordova-plugin-authcheck",
+        "clobbers": [
+            "authcheck"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-authcheck/src/browser/DeviceProxy.js",
+        "id": "cordova-plugin-authcheck.DeviceProxy",
+        "pluginId": "cordova-plugin-authcheck",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -50,8 +64,9 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-device": "1.1.1",
+    "cordova-plugin-camera": "2.1.0",
     "cordova-plugin-console": "1.0.2",
-    "cordova-plugin-camera": "2.1.0"
+    "cordova-plugin-authcheck": "1.1.1"
 }
 // BOTTOM OF METADATA
 });

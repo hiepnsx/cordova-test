@@ -7,12 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-authcheck": {
-            "PACKAGE_NAME": "jp.verve.thanksgift"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "jp.verve.thanksgift"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         },
@@ -20,6 +14,12 @@
             "PACKAGE_NAME": "jp.verve.thanksgift"
         },
         "cordova-plugin-camera": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
+        "cordova-plugin-authcheck": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
         }
     },

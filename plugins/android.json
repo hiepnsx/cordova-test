@@ -18,6 +18,9 @@
         },
         "cordova-plugin-authcheck": {
             "PACKAGE_NAME": "jp.verve.thanksgift"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "jp.verve.thanksgift"
         }
     },
     "dependent_plugins": {}

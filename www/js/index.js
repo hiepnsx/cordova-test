@@ -23,7 +23,8 @@ var app = {
 function onAuthSuccess(result) {
         console.log("success");
         document.getElementById("result").innerHTML = result.msg;
-        //TODO: redirect to take picture
+        // if (result.isSuccess == true) {window.location="takepicture.html";};
+        window.location="takepicture.html"
 };
 function onAuthFail(result) {
         console.log("fail");
